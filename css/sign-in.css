@@ -60,6 +60,10 @@ li:hover {
      transition: transform 0.3s ease;
 }
 
+h2 {
+     text-align: center;
+}
+
 form {
      display: flex;
      flex-direction: column;
@@ -158,8 +162,4 @@ button:hover {
           transform: translateY(0px);
      }
 } 
-
-h2 {
-     text-align: center;
-}
 
