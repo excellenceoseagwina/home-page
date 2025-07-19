@@ -1,7 +1,6 @@
 
 body {
-     content: "";
-     background-image: url(../images/galaxystruck_by_cupidwhisperer_dazm7yv.gif);
+     background-image: url(../images/nasa-rTZW4f02zY8-unsplash.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      color: white;
@@ -9,16 +8,26 @@ body {
      font-family: 'Orbitron';
 }
 
-.section-2 {
-     float: right; position: fixed;
-     top: 70px;
-     left: 820px;  
+body {
+     animation-name: body;
+     animation-duration: 1s;
+     animation-iteration-count: 1;
+}
+
+body::selection {
+     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .section-1 {
      position: fixed;
      top: 130px;
      left: 100px;
+}
+
+.section-2 {
+     float: right; position: fixed;
+     top: 70px;
+     left: 820px;  
 }
 
 ul {
@@ -38,7 +47,12 @@ li {
 }
 
 .remember-me {
-     
+     font-size: 12px;
+     margin-bottom: 10px;
+     margin-top: 10px;
+}
+.remember-me-check {
+     width: 10px;
 }
 
 li:hover {
@@ -50,8 +64,6 @@ form {
      display: flex;
      flex-direction: column;
      padding: 20px;
-     border-radius: 23px;
-     
 }
 
 [class="cred"] {
@@ -88,33 +100,65 @@ button:hover {
 
 .forgot {
      margin-top: 10px;
-     margin-bottom: 10px;
+     margin-bottom: 40px;
+     font-size: 12px;
+     margin-top: 20px;
 }
 
 .terms {
      text-align: center;
+     font-size: 10px;
 }
 
-h2 {
-     text-align: center;
+.arrow-right-icon {
+     padding: 100px;
 }
 
 
 .material-symbols-email {
      position: fixed;
-     top: 185px;
-     right: 410px;
+     top: 186px;
+     right: 205px;
+     left: 850px;
 }
 
 .material-symbols-password {
-       position: fixed;
+     position: fixed;
+     background-attachment: fixed;
      top: 252px;
-     right: 410px;
+     right: 205px;
+     left: 850px;
 }
 
-.cred-email:focus + .material-symbols-email {
-     display: none;
+@keyframes forward-backwards {
+     0% {
+          transform: translateX(0);
+     }
+     50% {
+          transform: translateX(10px);
+     }
+
 }
 
-.cred-email {
-    
+.arrow-right {
+     animation-name: forward-backwards;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+     width: 30px;
+}
+
+@keyframes body {
+     0% {
+         
+          transform: translateY(-100px);
+     }
+     100% {
+           
+          transform: translateY(0px);
+     }
+} 
+
+h2 {
+     text-align: center;
+}
+
