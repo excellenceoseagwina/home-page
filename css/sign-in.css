@@ -1,0 +1,42 @@
+
+body {
+     content: "";
+     background-image: url(../images/gargntua___interstellar_hd_gif_by_theossfx_d8mof28.gif);
+     background-repeat: no-repeat;
+     background-size: cover;
+     color: whi;
+     margin: 0;
+font-family: 'Orbitron';
+}
+
+.section-2 {
+     float: right;
+}
+
+.section-1 {
+     position: fixed;
+     top: 100px;
+     left: 100px;
+}
+
+ul {
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+     padding-left: 1px;
+}
+
+li {
+     list-style: none;
+}
+
+[class="social-icon"] {
+     width: 30px;
+}
+
+
+
+li:hover {
+     transform: rotate(360deg);
+     transition: transform 0.3s ease;
+}
