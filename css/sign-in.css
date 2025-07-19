@@ -77,6 +77,9 @@ form {
      padding-left: 40px;
      margin-bottom: 10px;
      margin-top: 2px;
+     background-color: rgba(0, 0, 0, 0.5);
+     color: white;
+     border-radius: 10px;
 }
 
 button {
@@ -118,16 +121,14 @@ button:hover {
 .material-symbols-email {
      position: fixed;
      top: 186px;
-     right: 205px;
-     left: 850px;
+     margin-left: 10px;
 }
 
 .material-symbols-password {
      position: fixed;
      background-attachment: fixed;
      top: 252px;
-     right: 205px;
-     left: 850px;
+     margin-left: 10px;
 }
 
 @keyframes forward-backwards {
