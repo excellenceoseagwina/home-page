@@ -1,21 +1,23 @@
 
 body {
      content: "";
-     background-image: url(../images/gargntua___interstellar_hd_gif_by_theossfx_d8mof28.gif);
+     background-image: url(../images/galaxystruck_by_cupidwhisperer_dazm7yv.gif);
      background-repeat: no-repeat;
      background-size: cover;
-     color: whi;
+     color: white;
      margin: 0;
-font-family: 'Orbitron';
+     font-family: 'Orbitron';
 }
 
 .section-2 {
-     float: right;
+     float: right; position: fixed;
+     top: 70px;
+     left: 820px;  
 }
 
 .section-1 {
      position: fixed;
-     top: 100px;
+     top: 130px;
      left: 100px;
 }
 
@@ -28,15 +30,91 @@ ul {
 
 li {
      list-style: none;
+     color: white;
 }
 
 [class="social-icon"] {
      width: 30px;
 }
 
-
+.remember-me {
+     
+}
 
 li:hover {
      transform: rotate(360deg);
      transition: transform 0.3s ease;
 }
+
+form {
+     display: flex;
+     flex-direction: column;
+     padding: 20px;
+     border-radius: 23px;
+     
+}
+
+[class="cred"] {
+     width: 300px;
+     height: 23px;
+     border-radius: 2px;
+     border: none;
+     outline: none;
+     line-height: 20px;
+     padding: 5px;
+     padding-left: 40px;
+     margin-bottom: 10px;
+     margin-top: 2px;
+}
+
+button {
+     font-family: inherit;
+     background-color: lightgreen;
+     border: none;
+     width: 100px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     color: white;
+     font-weight: bold;
+     cursor: pointer;
+     border-radius: 5px;
+     margin-top: 10px;
+     transition: background-color 0.3s ease-in;
+}
+
+button:hover {
+     background-color: rgb(97, 219, 97);
+}
+
+.forgot {
+     margin-top: 10px;
+     margin-bottom: 10px;
+}
+
+.terms {
+     text-align: center;
+}
+
+h2 {
+     text-align: center;
+}
+
+
+.material-symbols-email {
+     position: fixed;
+     top: 185px;
+     right: 410px;
+}
+
+.material-symbols-password {
+       position: fixed;
+     top: 252px;
+     right: 410px;
+}
+
+.cred-email:focus + .material-symbols-email {
+     display: none;
+}
+
+.cred-email {
+    
