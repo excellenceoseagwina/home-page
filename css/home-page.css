@@ -1,0 +1,79 @@
+
+body {
+     background-color: black;
+margin: 0;
+font-family: 'Orbitron';
+color: white;
+
+}
+
+.aside-checkbox {
+     display: none;
+}
+
+ .div-aside {
+     background-color: rgba(27, 25, 25, 0.493);
+     visibility: none;
+     opacity: 0;
+     transition: opacity ease-in-out 0.4s, visibility, 0.4s ease-out;
+
+     
+}
+
+label {
+margin-left: 30px;
+margin-top: 20px;
+cursor: pointer;
+
+}
+
+.div-aside:hover {
+     visibility: visible;
+     opacity: 1;
+}
+
+aside {
+     transform: translateX(-180px);
+     transition: 0.5s ease transform;
+     width: 124px;
+     position: fixed;
+     height: 100%;
+     background-color: rgba(10, 9, 9, 0.881);
+     top: 50px;
+}
+
+.aside-checkbox:checked + .aside {
+     transform: translateX(-40px); 
+}
+
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 109px;
+  text-align: center;
+
+}
+
+
+li{
+  background-color: rgba(0, 0, 0, 0.0);
+  list-style: none;
+  text-decoration: none;
+  height: 30px;
+  transition: background-color ease-in 0.1s;
+  border-radius: 10px;
+  padding-top: 10px;
+  color: white;
+  font-size: 12px;
+}
+
+li:hover {
+     background-color: rgba(29, 27, 27, 0.897);
+}
+
+a {
+     text-decoration: none;
+     color: white;
+}
+
