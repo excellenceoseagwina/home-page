@@ -1,12 +1,11 @@
 
 body {
-     background-image: url(../images/nasa-rTZW4f02zY8-unsplash.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     color: white;
-     margin: 0;
-     font-family: 'Orbitron';
-     width: 100%;
+   background-image: url(../images/large.jpg);
+   color: white;
+   font-family: orbitron;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
 }
 
 body {
@@ -22,7 +21,7 @@ body::selection {
      position: absolute;
      top: 130px;
      left: 100px;
-     flex-shrink: 1;
+     
 }
 
 .section-2 {
@@ -30,7 +29,6 @@ body::selection {
      position: absolute;
      top: 70px;
      left: 820px; 
-     flex-shrink: 1;
 }
 
 ul {
@@ -119,6 +117,10 @@ button:hover {
      margin-top: 20px;
 }
 
+.arrow-south {
+     display: none;
+}
+
 .terms {
      text-align: center;
      font-size: 10px;
@@ -172,4 +174,212 @@ button:hover {
 
 .material-symbols-email-icon {
      width: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Display On 720px*/
+@media screen and (max-width: 720px) {
+body {
+   background-image: none;
+   background-color: black;
+}
+
+h1 {
+     color: white;
+     font-size: 20px;
+     margin-left: 60px;
+}
+
+.section-1 {
+     width: 50%;
+     
+}
+
+.section-1-p-1 {
+     width: 324px;
+}
+
+.section-1-p-2 {
+     width: 230px;
+     margin-left: 30px;
+}
+
+.arrow-right-icon {
+     display: none;
+}
+
+.arrow-right-icosouth {
+ position: absolute;
+     left: 140px;
+     top: 190px;    
+}
+
+.arrow-south {
+     width: 20px;
+     display: block;
+}
+
+
+@keyframes forward-backward {
+     0% {
+          transform: translateY(0);
+     }
+     50% {
+          transform: translateY(10px);
+     }
+}
+
+.arrow-south {
+    animation-name: forward-backward;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+
+
+.social-nav {
+     margin-top: 20px;
+     margin-left: 60px
+}
+
+
+
+
+
+.section-2 {
+     width: 40px;
+     float: none;
+         
+     top: 0;
+     left: 0; 
+     margin-top: 400px;
+}
+
+h2 {
+     width: 20em;
+     text-align: center;
+}
+
+
+form {
+     display: flex;
+     flex-direction: column;
+     
+}
+
+label {
+     width: 5em;
+     margin-left: 3.4em;
+     margin-top: 20px;
+}
+
+[class="cred"] {
+     width: 300px;
+     height: 23px;
+     border-radius: 2px;
+     border: none;
+     outline: none;
+     line-height: 20px;
+     padding: 5px;
+     padding-left: 40px;
+     margin-bottom: 10px;
+     margin-top: 2px;
+     background-color: rgba(180, 176, 176, 0.5);
+     color: white;
+     border-radius: 10px;
+     margin-left: 50px;
+}
+
+[class="cred"]::selection {
+     background-color: rgba(255, 255, 255, 0.767);
+}
+
+
+.remember-me {
+     width: 200px;
+     margin-left: 1em;
+}
+
+
+.remember-me-check {
+     width: 10px;
+}
+
+button {
+     font-family: inherit;
+     background-color: lightgreen;
+     border: none;
+     width: 100px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     color: white;
+     font-weight: bold;
+     cursor: pointer;
+     border-radius: 5px;
+     margin-top: 10px;
+     transition: background-color 0.3s ease-in;
+     margin-left: 4em;
+}
+
+.material-symbols-email {
+     position: absolute;
+     top: 135px;
+     left: 70px;
+}
+
+.material-symbols-password {
+   position: absolute;
+     top: 222px;
+     left: 70px;
+}
+
+
+
+button:hover {
+     background-color: rgb(97, 219, 97);
+}
+
+.forgot {
+    width: 12em;
+    margin-left: 4em;
+}
+
+.terms {
+     text-align: center;
+     font-size: 10px;
+}
+
+
+
+
+@keyframes body {
+     0% {
+         
+          transform: translateY(-100px);
+     }
+     100% {
+           
+          transform: translateY(0px);
+     }
+} 
+
+.material-symbols-email-icon {
+     width: 25px;
+}
+
 }
