@@ -14,7 +14,6 @@ padding: 1px;
 
  .div-aside {
      background-color: rgba(0, 0, 0, 0.922);
-     
      position: fixed;
      top: 0;
      left: 0;
@@ -22,9 +21,9 @@ padding: 1px;
 }
 
 label {
-margin-left: 30px;
-margin-top: 20px;
-cursor: pointer;
+     margin-left: 30px;
+     margin-top: 20px;
+     cursor: pointer;
 
 }
 
@@ -41,6 +40,8 @@ aside {
      height: 100%;
      background-color: rgb(6, 6, 6);
      top: 50px;
+     display: block;
+     opacity: 1;
 }
 
 .aside-checkbox:checked + .aside {
@@ -115,3 +116,13 @@ p {
      text-align: center;
 }
 
+@media screen and (max-width: 720px) {
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  text-align: center;
+
+}
+}
