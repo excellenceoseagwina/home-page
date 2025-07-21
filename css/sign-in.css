@@ -178,27 +178,18 @@ button:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Display On 720px*/
 @media screen and (max-width: 720px) {
 body {
-   background-image: none;
+   background-image: url(../images/large.jpg);
    background-color: black;
+   background-size: 1076px, 60px, contain;
+   background-position: center;
+   margin: 0;
 }
 
 h1 {
+     margin-top: 10px;
      color: white;
      font-size: 20px;
      margin-left: 60px;
@@ -206,6 +197,7 @@ h1 {
 
 .section-1 {
      width: 50%;
+     
      
 }
 
@@ -250,16 +242,10 @@ h1 {
     animation-duration: 1s;
 }
 
-
-
 .social-nav {
      margin-top: 20px;
      margin-left: 60px
 }
-
-
-
-
 
 .section-2 {
      width: 40px;
@@ -267,7 +253,7 @@ h1 {
          
      top: 0;
      left: 0; 
-     margin-top: 400px;
+     margin-top: 360px;
 }
 
 h2 {
@@ -292,14 +278,14 @@ label {
      width: 300px;
      height: 23px;
      border-radius: 2px;
-     border: none;
+     border: 1px white solid;
      outline: none;
      line-height: 20px;
      padding: 5px;
      padding-left: 40px;
      margin-bottom: 10px;
      margin-top: 2px;
-     background-color: rgba(180, 176, 176, 0.5);
+     background-color: rgba(0, 0, 0, 0.5);
      color: white;
      border-radius: 10px;
      margin-left: 50px;
@@ -360,10 +346,9 @@ button:hover {
 }
 
 .terms {
-     text-align: center;
-     font-size: 10px;
+     width: 20em;
+     margin-left: 13em;
 }
-
 
 
 
