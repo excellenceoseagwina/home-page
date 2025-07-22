@@ -5,7 +5,7 @@ margin: 0;
 font-family: 'Orbitron';
 color: white;
 padding: 1px;
-
+background-color: rgba(29, 27, 27, 0.897);
 }
 
 .aside-checkbox {
@@ -105,19 +105,30 @@ a {
      
 }
 
-main {
-     background-image: url(../images/nasa-rTZW4f02zY8-unsplash.jpg);
-     background-size: cover;
-     background-position: center;
-     padding: 100px;
+
+.rows {
+     width: 100px;
+     display: flex;
+     flex-wrap: wrap;
+
 }
 
-p {
-     text-align: center;
+.row:hover {
+     width: 101px;
 }
+
+.row {
+     border: 1px solid ;
+}
+
+
 
 @media screen and (max-width: 720px) {
 
+
+     body {
+          background-color: black;
+     }
 ul {
   display: flex;
   flex-direction: column;
