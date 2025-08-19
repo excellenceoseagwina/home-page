@@ -22,13 +22,6 @@ body::selection {
   left: 100px;
 }
 
-.section-2 {
-  float: right;
-  position: absolute;
-  top: 70px;
-  left: 820px;
-}
-
 ul {
   display: flex;
   flex-direction: row;
@@ -50,6 +43,7 @@ li {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
 .remember-me-check {
   width: 10px;
 }
@@ -61,6 +55,17 @@ li:hover {
 
 h2 {
   text-align: center;
+}
+
+.section-2 {
+  float: right;
+  position: absolute;
+  top: 70px;
+  left: 820px;
+  background: transparent;
+  width: 25rem;
+  backdrop-filter: blur(12px);
+  box-shadow: 0.5px 0.5px 0.5px white;
 }
 
 form {
@@ -145,6 +150,7 @@ button:hover {
   0% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(10px);
   }
@@ -161,6 +167,7 @@ button:hover {
   0% {
     transform: translateY(-100px);
   }
+
   100% {
     transform: translateY(0px);
   }
@@ -183,7 +190,7 @@ button:hover {
   h1 {
     margin-top: 10px;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     margin-left: 60px;
   }
 
@@ -219,6 +226,7 @@ button:hover {
     0% {
       transform: translateY(0);
     }
+
     50% {
       transform: translateY(10px);
     }
@@ -237,11 +245,15 @@ button:hover {
   }
 
   .section-2 {
-    width: 40px;
+    width: 29rem;
     float: none;
-
+    background: transparent;
+    backdrop-filter: blur(9px);
+    box-shadow: 0.5px 0.5px 0.5px white;
     top: 0;
     left: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 360px;
   }
 
@@ -337,6 +349,7 @@ button:hover {
     0% {
       transform: translateY(-100px);
     }
+
     100% {
       transform: translateY(0px);
     }
